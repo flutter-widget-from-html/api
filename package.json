@@ -1,0 +1,20 @@
+{
+  "name": "@flutter-widget-from-html/api",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flutter-widget-from-html/api.git"
+  },
+  "author": "Dao Hoang Son <daohoangson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "now": "^19.1.0"
+  },
+  "devDependencies": {
+    "@now/node": "^1.7.0"
+  },
+  "scripts": {
+    "deploy": "now --token=$VERCEL_TOKEN",
+    "dev": "now dev --token=$VERCEL_TOKEN"
+  }
+}
