@@ -5,6 +5,9 @@ export default (request: NowRequest, response: NowResponse) => {
   if (!body) {
     return response.status(400).send('POST param `body` or include in query string to render.')
   }
+  if (body.indexOf('twitter') > -1) {
+    return response.status(429).send('Too many Twitter requests.')
+  }
 
   const html = `
 <!doctype html>
